@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+     <RadioGroup
+         android:id="@+id/radioBoardType"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+ 
+        <RadioButton
+            android:id="@+id/radioUno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_uno" 
+            android:checked="true" />
+ 
+        <RadioButton
+            android:id="@+id/radioMega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_mega" />
+ 
+    </RadioGroup>
+
+     <Button
+         android:id="@+id/btnStart"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/btn_start" />
+
+     <Button
+         android:id="@+id/btnStop"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/btn_stop" />
+
+     <EditText
+         android:id="@+id/editText1"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:ems="10"
+         android:inputType="textMultiLine"
+         android:gravity="top"  
+         android:focusable="false"
+         android:text="@string/initial_text" >
+
+         <requestFocus />
+     </EditText>
+ 
+</LinearLayout>
